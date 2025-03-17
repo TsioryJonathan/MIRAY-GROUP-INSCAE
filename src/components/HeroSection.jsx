@@ -1,6 +1,7 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 
-export function HeroSection() {
+export default function HeroSection() {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -35,13 +36,15 @@ export function HeroSection() {
             {links.map((link, i) => {
               return (
                 <li>
-                  <button
+                  <ScrollLink
+                    to={link.section}
+                    smooth
+                    duration={300}
                     key={i}
-                    onClick={scrollToSection(link.section)}
                     className="cursor-pointer flex justify-between items-center w-full hover:translate-y-[-5px] transition-all duration-300"
                   >
                     {link.text} <i class="bx bx-right-arrow-alt"></i>
-                  </button>
+                  </ScrollLink>
                 </li>
               );
             })}
