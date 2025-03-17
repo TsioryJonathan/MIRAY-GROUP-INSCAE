@@ -1,9 +1,16 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Footer() {
   const socialLink = [
     { icon: <i class="bx bxl-facebook-circle"></i>, link: "www.facebook.com" },
     { icon: <i class="bx bxl-instagram-alt"></i>, link: "www.instagram.com" },
+  ];
+
+  const navigationLink = [
+    { text: "Accueil", link: "hero" },
+    { text: "Qui sommes nous ?", link: "about" },
+    { text: "Activités", link: "programs" },
   ];
 
   let year = new Date().getFullYear();
@@ -13,14 +20,14 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="md:w-1/3">
-            <h3 className="text-xl font-bold mb-4">ASSO CAMPUS CONNECTÉE</h3>
+            <h3 className="text-xl font-bold mb-4">GROUPE M'IRAY</h3>
             <p className="mb-4">
               Rendre ta vie étudiante plus fun et plus enrichissante !
             </p>
             <div className="flex space-x-4">
               {socialLink.map((l, i) => {
                 return (
-                  <a href={l.link} key={i}>
+                  <a href={l.link} key={i} target="_blank">
                     {l.icon}
                   </a>
                 );
@@ -30,32 +37,19 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-3">Navigation</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="#hero" className="hover:text-blue-500 transition">
-                  Accueil
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="hover:text-blue-500 transition">
-                  Qui sommes-nous
-                </a>
-              </li>
-              <li>
-                <a href="#programs" className="hover:text-blue-500 transition">
-                  Activités
-                </a>
-              </li>
-              <li>
-                <a href="#team" className="hover:text-blue-500 transition">
-                  L'équipe
-                </a>
-              </li>
+              {navigationLink.map((e, i) => {
+                return (
+                  <li key={i}>
+                    <ScrollLink to={e.link} smooth duration={300} className="cursor-pointer">{e.text}</ScrollLink>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div>
             <h4 className="text-lg font-bold mb-3">Contact</h4>
             <ul className="space-y-2">
-              <li>Université de la Ville</li>
+              <li>INSCAE</li>
               <li>groupemiray@gmail.com</li>
               <li>06 12 34 56 78</li>
             </ul>

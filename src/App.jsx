@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="flex flex-col bg-gradient-to-r from-[#CCB497] via-[#204F5B] via-[#204F5C] to-[#242318]">
+    <div className="flex flex-col ">
       <Header />
       <HeroSection />
       <AboutSection />

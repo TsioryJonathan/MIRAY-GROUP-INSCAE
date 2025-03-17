@@ -31,7 +31,7 @@ export default function AboutSection() {
           {cardContents.map((c, i) => {
             return (
               <div
-                className="p-6 bg-gray-50 rounded-lg shadow-md h-full"
+                className="p-6 bg-gray-50 rounded-lg lg:w-[33.33%] md:w-[33.33%] sm:w-full shadow-md h-2xs"
                 key={i}
               >
                 <div className="mb-4 flex justify-center">
@@ -46,14 +46,6 @@ export default function AboutSection() {
               </div>
             );
           })}
-        </div>
-        <div className="mt-12 text-center">
-          <p className="text-lg font-bold text-[#204F5B] mb-4">
-            DEVIENS MEMBRE DE L'ASSO
-          </p>
-          <button className="bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-800 transition duration-300">
-            ADHÉRER
-          </button>
         </div>
       </div>
     </section>

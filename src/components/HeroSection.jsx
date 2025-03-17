@@ -1,5 +1,6 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
+import assets from "../assets/images/assets";
 
 export default function HeroSection() {
   const scrollToSection = (id) => {
@@ -19,9 +20,9 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="w-full min-h-screen text-white flex flex-col justify-center items-center pt-8 pb-8 px-4 relative"
+      className="w-screen lg:h-screen md:h-screen sm:h-full text-white flex flex-col lg:flex-row md:flex-row sm:flex-col items-center pt-8 overflow-x-hidden overflow-y-hidden bg-gradient-to-r from-[#d6aa74] via-[#204F5B]  to-[#242318]"
     >
-      <div className="container mx-auto flex flex-col items-center text-center space-y-8">
+      <div className="w-[50%] h-[92vh] sm:h-[93vh] flex flex-col justify-between items-center text-center py-10 relative">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
           " INSCAE M’IRAY,
           <span className="block">INSCAE MILAY "</span>
@@ -57,11 +58,18 @@ export default function HeroSection() {
             REJOINS-NOUS
           </button>
         </div>
-        <div className="absolute bottom-8 animate-bounce ">
+        <div className="absolute bottom-[-10px] animate-bounce ">
           <button onClick={() => scrollToSection("about")}>
             <i className="bx bx-chevron-down text-4xl cursor-pointer"></i>
           </button>
         </div>
+      </div>
+      <div className="lg:w-[50%] md:w-[50%] sm:w-full xs:hidden overflow-hidden">
+        <img
+          src={assets.banneer1}
+          alt="groupe M'IRAY"
+          className="lg:h-screen md:h-screen w-full object-cover"
+        />
       </div>
     </section>
   );
