@@ -28,8 +28,7 @@ export default function HeroSection() {
         </h1>
         <div className="w-20 h-1 bg-white"></div>
         <p className="text-xl md:text-2xl max-w-2xl font-medium">
-          Ta communauté étudiante pour une vie de campus plus riche et plus fun
-          !
+          M'IRAY : Unis pour avancer , ensemble pour réussir !
         </p>
         <div className="w-64 flex items-center justify-center">
           <ul className="flex flex-wrap flex-col gap-4 text-lg font-medium list-disc w-[80%]">
