@@ -52,15 +52,10 @@ export default function HeroSection() {
         </div>
         <div className="mt-0">
           <button
-            className="bg-white text-blue-700 font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-blue-300 transition duration-300 cursor-pointer"
-            onClick={() => scrollToSection("about")}
+            className="bg-white text-blue-700 font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-blue-300 transition duration-300 cursor-pointer flex justify-between items-center"
+            onClick={() => scrollToSection("candidate")}
           >
-            REJOINS-NOUS
-          </button>
-        </div>
-        <div className="absolute bottom-[-10px] animate-bounce ">
-          <button onClick={() => scrollToSection("about")}>
-            <i className="bx bx-chevron-down text-4xl cursor-pointer"></i>
+            VOIR NOTRE CANDIDAT <i class="bx bx-right-arrow-alt"></i>
           </button>
         </div>
       </div>

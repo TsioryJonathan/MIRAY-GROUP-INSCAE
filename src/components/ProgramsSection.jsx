@@ -24,8 +24,12 @@ export default function ProgramsSection() {
   return (
     <div className="flex flex-col items-center justify-center" id="programs">
       <h2 className="text-3xl font-bold text-center text-[#204F5B] mb-12">
-        NOS PROGRAMMES
+        NOS PROGRAMMES{" "}
+        <span className="block mt-5 text-gray-700 text-lg">
+          (Cliquez sur les photos ci-dessous)
+        </span>
       </h2>
+      <p></p>
       <div className="flex flex-col lg:flex-row md:flex-row flex-wrap justify-center items-center gap-6 p-4">
         {images.map((img, i) => {
           return (

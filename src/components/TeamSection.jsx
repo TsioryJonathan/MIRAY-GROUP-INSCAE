@@ -22,7 +22,7 @@ export default function TeamSection() {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-2xl font-bold mb-2">Une équipe motivée</h3>
-            <p className="text-blue-700 font-bold mb-4">À ton service 7j/7</p>
+
             <div className="space-y-4 text-gray-700">
               <p>
                 Notre équipe est composée d'étudiants passionnés qui donnent de
@@ -31,14 +31,11 @@ export default function TeamSection() {
                 !
               </p>
               <p>
-                Tu as envie de nous rejoindre ? On recrute toujours des
-                personnes motivées pour nous aider à organiser encore plus
-                d'activités cool !
+                Alors rejoins l'équipe, par votre soutien nous allons créer
+                ensemble un INSCAE au sommet de son excellence
               </p>
-              <blockquote className="border-l-4 border-blue-700 pl-4 italic">
-                "L'asso, c'est avant tout une bande de potes qui veulent que
-                chaque étudiant se sente bien sur le campus et garde des
-                souvenirs de ouf de ses années d'études !"
+              <blockquote className="border-l-4 border-blue-700 pl-4 italic text-2xl">
+                "M'IRAY: parce que seul on va vite, mais ensemble on va loin !"
               </blockquote>
             </div>
             <div className="mt-6">

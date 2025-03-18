@@ -6,19 +6,19 @@ export default function AboutSection() {
       icons: <i class="bx bxs-group text-2xl"></i>,
       title: "Notre Mission",
       content:
-        "Créer des liens entre tous les étudiants du campus, favoriser les échanges et rendre la vie étudiante plus enrichissante. Nous sommes là pour faire de tes années d'études une expérience inoubliable !",
+        "Créer des liens entre tous les étudiants, favoriser les échanges et rendre la vie étudiante plus enrichissante. Nous sommes là pour faire de tes années d'études une expérience inoubliable !",
     },
     {
       icons: <i class="bx bxs-party text-2xl"></i>,
-      title: "Nos Événements",
+      title: "Nos projets",
       content:
-        "Soirées d'intégration, événements culturels, activités sportives, sorties... On organise plus de 50 événements par an pour que tu puisses profiter à fond de ta vie étudiante !",
+        "Projet de leadership, activités sportives et intellectuelles, évènement culturel, voyage, et bien d'autres encore. Nous organisons de nombreux évènements pour que chacun profite pleinement d'une vie étudiante inoubliable",
     },
     {
       icons: <i class="bx bxs-graduation text-2xl"></i>,
       title: "Notre Impact",
       content:
-        "Plus de 2000 étudiants nous font confiance chaque année. Nous travaillons avec l'administration pour améliorer la vie sur le campus et créer un environnement étudiant dynamique.",
+        "Nous nous engageons à satisfaire les attentes des élèves. Nous travaillons avec l'administration pour améliorer la vie estudiantine et créer un environnement étudiant dynamique.",
     },
   ];
   return (

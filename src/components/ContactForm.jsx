@@ -7,7 +7,7 @@ export const ContactForm = () => {
         Nous envoyer des suggestions :{" "}
       </h4>
       <form
-        action="https://formspree.io/f/xyzezoyy"
+        action="https://formspree.io/f/xqapanpr"
         method="POST"
         className="flex flex-col items-center"
       >
@@ -17,7 +17,12 @@ export const ContactForm = () => {
           required
           className="bg-gray-700 p-4 rounded-2xl outline-none border-none w-full min-h-30"
         ></textarea>
-        <button type="submit" className="bg-blue-400 p-2 rounded-2xl cursor-pointer w-30 mt-10">Envoyer</button>
+        <button
+          type="submit"
+          className="bg-blue-400 p-2 rounded-2xl cursor-pointer w-30 mt-10"
+        >
+          Envoyer
+        </button>
       </form>
     </div>
   );

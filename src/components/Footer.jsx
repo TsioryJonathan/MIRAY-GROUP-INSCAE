@@ -1,6 +1,7 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { ContactForm } from "./ContactForm";
+import navigationLink from "../data/navLinks";
 
 export default function Footer() {
   const socialLink = [
@@ -18,13 +19,6 @@ export default function Footer() {
     },
   ];
 
-  const navigationLink = [
-    { text: "Accueil", link: "hero" },
-    { text: "Qui sommes nous ?", link: "about" },
-    { text: "Activités", link: "programs" },
-    { text: "Notre équipe", link: "team" },
-  ];
-
   let year = new Date().getFullYear();
 
   return (
@@ -32,9 +26,10 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="md:w-1/3">
-            <h3 className="text-xl font-bold mb-4">GROUPE M'IRAY</h3>
+            <h3 className="text-xl font-bold mb-4">EQUIPE M'IRAY</h3>
             <p className="mb-4">
-              Rendre ta vie étudiante plus fun et plus enrichissante !
+              NOUS ALLONS TRAVAILLER MAIN DANS LA MAIN POUR RENDRE LA VIE
+              INSCAENNE PLUS ENRICHIS DE SANTE QUE JAMAIS !
             </p>
             <div className="flex space-x-4">
               {socialLink.map((l, i) => {
@@ -53,7 +48,7 @@ export default function Footer() {
                 return (
                   <li key={i}>
                     <ScrollLink
-                      to={e.link}
+                      to={e.section}
                       smooth
                       duration={300}
                       className="cursor-pointer hover:text-blue-400 duration-300 transition-all"
@@ -69,8 +64,8 @@ export default function Footer() {
             <h4 className="text-lg font-bold mb-3">Contact</h4>
             <ul className="space-y-2">
               <li>INSCAE</li>
-              <li>groupemiray@gmail.com</li>
-              <li>06 12 34 56 78</li>
+              <li>mirayinscae@gmail.com</li>
+              <li>+261 38 18 911 68</li>
             </ul>
           </div>
           <ContactForm />
