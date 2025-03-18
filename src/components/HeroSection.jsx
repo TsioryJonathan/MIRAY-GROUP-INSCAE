@@ -20,9 +20,9 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="w-screen lg:h-screen md:h-screen sm:h-full text-white flex flex-col lg:flex-row md:flex-row sm:flex-col items-center pt-8 overflow-x-hidden overflow-y-hidden bg-gradient-to-r from-[#d6aa74] via-[#204F5B]  to-[#242318]"
+      className="w-screen lg:h-screen md:h-screen sm:h-screen text-white flex flex-col lg:flex-row md:flex-row sm:flex-col items-center pt-8 overflow-x-hidden overflow-y-hidden bg-gradient-to-r from-[#d6aa74] via-[#204F5B]  to-[#242318]"
     >
-      <div className="w-[50%] h-[92vh] sm:h-[93vh] flex flex-col justify-between items-center text-center py-10 relative">
+      <div className="w-[50%] h-[100vh] sm:h-[93vh] flex flex-col justify-between items-center text-center py-10 relative">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
           " INSCAE M’IRAY,
           <span className="block">INSCAE MILAY "</span>

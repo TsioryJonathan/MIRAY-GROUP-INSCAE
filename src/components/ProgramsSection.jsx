@@ -40,7 +40,7 @@ export default function ProgramsSection() {
         })}
         {selectedImage && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-80 flex z-999 justify-center items-center"
+            className="fixed inset-0 bg-[#00000057] flex z-999 justify-center items-center backdrop-blur-2xl"
             onClick={() => setSelectedImage(null)}
           >
             <img
