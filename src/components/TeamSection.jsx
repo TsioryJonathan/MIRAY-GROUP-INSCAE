@@ -3,33 +3,21 @@ import assets from "../assets/images/assets";
 import video from "../assets/video/video.mp4";
 
 export default function TeamSection() {
-  const teamPhotos = [
-    assets.eq1,
-    assets.eq2,
-    assets.eq3,
-    assets.eq5,
-    assets.eq6,
-    assets.eq7,
-  ];
+  const teamPhotos = [assets.eq1, assets.eq2];
   return (
     <section id="team" className="py-16 px-4 bg-white">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center text-blue-700 mb-12">
+        <h2 className="text-3xl font-bold text-center text-[#204F5B] mb-12">
           L'ÉQUIPE
         </h2>
         <div className="flex flex-col md:flex-row gap-8 items-center">
-          <div className="w-full lg:w-[55%] grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
+          <div className="w-full lg:w-[55%] flex flex-col lg:flex-row items-center gap-2 relative ">
             {teamPhotos.map((photo, index) => (
-              <div
-                key={index}
-                className="aspect-square rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
-              >
-                <img
-                  src={photo}
-                  alt={`Membre de l'équipe ${index + 1}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <img
+                src={photo}
+                alt={`Membre de l'équipe ${index + 1}`}
+                className="w-[80%] lg:w-[50%] md:w-[50%] h-[40%]  object-cover rounded-3xl"
+              />
             ))}
           </div>
           <div className="md:w-1/2">
@@ -54,7 +42,7 @@ export default function TeamSection() {
               </blockquote>
             </div>
             <div className="mt-6">
-              <h4 className="font-bold mb-2">Notre équipe en action</h4>
+              <h4 className="font-bold mb-2">Notre équipe : </h4>
               <div className="flex items-center justify-center">
                 <video
                   controls

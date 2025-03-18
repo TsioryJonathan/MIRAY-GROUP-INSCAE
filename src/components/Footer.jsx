@@ -1,16 +1,28 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { ContactForm } from "./ContactForm";
 
 export default function Footer() {
   const socialLink = [
-    { icon: <i class="bx bxl-facebook-circle"></i>, link: "www.facebook.com" },
-    { icon: <i class="bx bxl-instagram-alt"></i>, link: "www.instagram.com" },
+    {
+      icon: (
+        <i class="bx bxl-facebook-square text-3xl hover:scale-120 transition-all duration-300 hover:text-blue-500"></i>
+      ),
+      link: "https://www.facebook.com",
+    },
+    {
+      icon: (
+        <i class="bx bxl-instagram-alt text-3xl hover:scale-120 transition-all duration-300 hover:text-blue-500"></i>
+      ),
+      link: "https://www.instagram.com",
+    },
   ];
 
   const navigationLink = [
     { text: "Accueil", link: "hero" },
     { text: "Qui sommes nous ?", link: "about" },
     { text: "Activités", link: "programs" },
+    { text: "Notre équipe", link: "team" },
   ];
 
   let year = new Date().getFullYear();
@@ -40,7 +52,14 @@ export default function Footer() {
               {navigationLink.map((e, i) => {
                 return (
                   <li key={i}>
-                    <ScrollLink to={e.link} smooth duration={300} className="cursor-pointer">{e.text}</ScrollLink>
+                    <ScrollLink
+                      to={e.link}
+                      smooth
+                      duration={300}
+                      className="cursor-pointer hover:text-blue-400 duration-300 transition-all"
+                    >
+                      {e.text}
+                    </ScrollLink>
                   </li>
                 );
               })}
@@ -54,21 +73,7 @@ export default function Footer() {
               <li>06 12 34 56 78</li>
             </ul>
           </div>
-          <div>
-            <h4 className="text-lg font-bold mb-3">Rejoins-nous</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:text-blue-500 transition">
-                  Devenir membre
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-500 transition">
-                  Nous contacter
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ContactForm />
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
           <p>©{year} Groupe M'IRAY. Tous droits réservés.</p>
